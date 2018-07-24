@@ -4,4 +4,4 @@ import App from './components/App';
 import './index.css'
 import Experiment from './components/Experiment';
 
-ReactDOM.render(<Experiment />, document.getElementById("root"));
+ReactDOM.render(<App />, document.getElementById("root"));
