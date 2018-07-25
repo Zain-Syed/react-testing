@@ -3,12 +3,6 @@ import { Form, FormControl, Button } from 'react-bootstrap';
 import Notes from './Notes';
 import { bake_cookie, read_cookie, delete_cookie } from 'sfcookies';
 
-//this syntax is anonymous(arrow function)
-// const roar = (message) => {
-//     console.log(message);
-// }
-// roar("roarrr");
-
 const cookie_key = "NOTES";
 
 class App extends React.Component {
@@ -22,7 +16,6 @@ class App extends React.Component {
     }
 
     handleSubmit(){
-        // const notes = this.state.notes;
         //destructured syntax
         const { notes, text } = this.state;
         notes.push({ text });
