@@ -16,10 +16,7 @@ class App extends React.Component {
     }
 
     handleSubmit(){
-<<<<<<< HEAD
         //const notes = this.state.notes;
-=======
->>>>>>> 584f63d30dbe86c034dfa1adc7914a30573d0847
         //destructured syntax
         const { notes, text } = this.state;
         notes.push({ text });

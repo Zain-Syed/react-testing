@@ -8,9 +8,6 @@ describe("<App/>", () => {
     it("Should render the title", () => {
         expect((app).find('h2').text()).toEqual('Notes');
     });
-    it("renders the title", () => {
-        expect((app).find('h2').text()).toEqual('Note To Self')
-    });
 
     it("renders the clear button", () => {
         expect(app.find(".btn").at(1).text()).toEqual("Clear Notes");
