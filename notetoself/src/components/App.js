@@ -22,7 +22,7 @@ class App extends React.Component {
     }
 
     handleSubmit(){
-        // const notes = this.state.notes;
+        //const notes = this.state.notes;
         //destructured syntax
         const { notes, text } = this.state;
         notes.push({ text });
@@ -45,7 +45,7 @@ class App extends React.Component {
     render() {
         return(
             <div>
-                <h2>Note To Self</h2>
+                <h2>Notes</h2>
                 <Form inline>
                     <FormControl onChange={(event) => this.setState({text: event.target.value})} />
                     <Button onClick={() => this.handleSubmit()}>Submit</Button>

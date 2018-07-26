@@ -6,7 +6,7 @@ describe("<App/>", () => {
     let app = mount(<App />);
 
     it("Should render the title", () => {
-        expect((app).find('h2').text()).toEqual('Note To Self')
+        expect((app).find('h2').text()).toEqual('Notes');
     });
 
     it("renders the clear button", () => {
