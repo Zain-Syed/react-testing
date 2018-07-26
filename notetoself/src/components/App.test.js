@@ -5,8 +5,13 @@ import App from './App';
 describe("<App/>", () => {
     let app = mount(<App />);
 
+<<<<<<< HEAD
     it("Should render the title", () => {
         expect((app).find('h2').text()).toEqual('Notes');
+=======
+    it("renders the title", () => {
+        expect((app).find('h2').text()).toEqual('Note To Self')
+>>>>>>> 584f63d30dbe86c034dfa1adc7914a30573d0847
     });
 
     it("renders the clear button", () => {
@@ -18,7 +23,7 @@ describe("<App/>", () => {
             expect(app.find("Form").exists()).toBe(true);
         });
 
-        it("renders a formcontrol component", () => {
+        it("renders a FormControl component", () => {
             expect(app.find("FormControl").exists()).toBe(true);
         });
 
